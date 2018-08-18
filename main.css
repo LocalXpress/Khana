@@ -1,0 +1,38 @@
+@media only screen and (min-width: 600px){
+    
+        #TableBody
+            {
+                margin: auto;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                width: 80%;
+            }
+    }
+    
+    @media only screen and (max-width: 599px){
+    
+        #TableBody
+            {
+                margin: auto;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                width: 99%;
+            }
+        
+        
+    }
+
+    body
+        {
+            background: #dbe8fc;
+        }
+    .heading 
+        {
+            margin-top: 2%;
+            margin-bottom: -1%;
+            border-bottom: 2px;
+        }
+    h3
+        {
+            margin-top: -1%;
+        }

@@ -5,36 +5,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width"/>
     <script src="semantic.js"></script>
-
-    <style type="text/css">
-    #TableBody
-        {
-            margin: auto;
-            margin-top: 5%;
-            margin-bottom: 5%;
-            width: 80%;
-        }
-    body
-        {
-            background: #ffffff;
-        }
-    .heading 
-        {
-            margin-top: 2%;
-            margin-bottom: -1%;
-            border-bottom: 2px;
-        }
-    h3
-        {
-            margin-top: -1%;
-        }
-    </style>
-
-
-    <script type="text/javascript"> 
-
-            
-    </script>
+    <link rel="stylesheet" type="text/css" href="main.css">
 
 
 </head>
@@ -54,7 +25,7 @@
             <p>
                 <b>Email:</b><i>www.centralperk@gmail.com</i><br>
                 <b>Phone:</b><i>9674507568 / 921366357</i><br>
-                <b>Website:</b><i><a href="#">www.centralperkwithfriends.com</a></i>
+                <b>Website:</b><i><a href="www.centralperkwithfriends.com" target="_blank">www.centralperkwithfriends.com</a></i>
             </p>
         </center>
         <div class="afterMenu">
@@ -73,7 +44,7 @@
                     <i class="google plus icon"></i>
                 </button>
             </center>
-        </div
+        </div>
     </div>
 <!--
 ================================================================================================
@@ -81,34 +52,36 @@
 ================================================================================================
 -->
     <div id="TableBody">    
-        <table class="ui celled table">   
-            <thead>
-                <tr>
-                    <th>
-                        <div class="ui stackable grid">
-                            <div class="six wide column">
-                                ITEM
+        <table class="ui celled table">
+            <div>   
+                <thead>
+                    <tr id="FullScreenHeader">
+                        <th>
+                            <div class="ui stackable grid">
+                                <div class="six wide column">
+                                    ITEM
+                                </div>
+                                <div class="two wide column">
+                                    COST
+                                </div>
+                                <div class="two wide column">
+                                    NUMBER
+                                </div>
+                                <div class="two wide column">
+                                    ORDER
+                                </div>
+                            <div class="two wide column">
+                                TOTAL COST
                             </div>
                             <div class="two wide column">
-                                COST
-                            </div>
-                            <div class="two wide column">
-                                NUMBER
-                            </div>
-                            <div class="two wide column">
-                                ORDER
-                            </div>
-                        <div class="two wide column">
-                            TOTAL COST
+                                
+                            </div>    
                         </div>
-                        <div class="two wide column">
-                            
-                        </div>    
-                    </div>
-                    </th>
-                </tr>
-            </thead>
-            
+                        </th>
+                    </tr>
+                </thead>
+            </div>
+
             <tbody>
 <!--
 ===============================================================================================            
@@ -137,7 +110,7 @@
                             <i class="rupee sign icon"></i>0.00
                         </div>
                         <div class="two wide column">
-                            <a href="" id="dish1Button"><i class="ellipsis horizontal icon"></i></a>
+                            <a href="#" id="dish1Button"><i class="ellipsis horizontal icon"></i></a>
                         </div>    
                     </div> 
                   </td>
@@ -169,7 +142,7 @@
                             <i class="rupee sign icon"></i>0.00
                         </div>
                         <div class="two wide column">
-                            <a href="" id="dish2Button"><i class="ellipsis horizontal icon"></i></a>
+                            <a href="#" id="dish2Button"><i class="ellipsis horizontal icon"></i></a>
                         </div>    
                     </div> 
                   </td>
@@ -201,7 +174,7 @@
                             <i class="rupee sign icon"></i>0.00
                         </div>
                         <div class="two wide column">
-                            <a href="" id="dish3Button"><i class="ellipsis horizontal icon"></i></a>
+                            <a href="#" id="dish3Button"><i class="ellipsis horizontal icon"></i></a>
                         </div>    
                     </div> 
                   </td>
@@ -233,7 +206,7 @@
                             <i class="rupee sign icon"></i>0.00
                         </div>
                         <div class="two wide column">
-                            <a href=""id="dish4Button"><i class="ellipsis horizontal icon"></i></a>
+                            <a href="#" id="dish4Button"><i class="ellipsis horizontal icon"></i></a>
                         </div>    
                     </div> 
                   </td>
@@ -252,20 +225,20 @@
                         <div class="two wide column">
                             <i class="rupee sign icon"></i>80.00
                         </div>
-                        <div class="two wide column">
+                        <div class="two wide column" id="EggChickenDiv">
                             0
                         </div>
                         <div class="two wide column">
                             <div class="ui ignored icon font buttons">
-                                <button class="ui tiny green inverted button"><i class="plus icon"></i></a>
-                                <button class="ui tiny red   inverted button"><i class="minus icon"></i></a>
+                                <button class="ui tiny green inverted button" id="EggChickenInc"  onclick="increase(this);"><i class="plus icon"></i></a>
+                                <button class="ui tiny red   inverted button" id="EggChickenDesc" onclick="increase(this);"><i class="minus icon"></i></a>
                             </div>
                         </div>
                          <div class="two wide column">
-                            <i class="rupee sign icon"></i>0.00
+                            <p id="EggChickenCostDiv"><i class="rupee sign icon"></i>0.00</p>
                         </div>
                         <div class="two wide column">
-                            <a href="" id="dish5Button"><i class="ellipsis horizontal icon"></i></a>
+                            <button class="ui blue button" id="dish5Button">Info</button>
                         </div>    
                     </div> 
                   </td>
@@ -275,7 +248,7 @@
       
             <tfoot>
                 <th>
-                    <button class="ui inverted blue button" id="NeedHelpButton">Need Help?</button>
+                    <button class="ui inverted blue button" id="NeedHelpButton">REVIEW ORDER</button>
                 </th>
             </tfoot>
         </table>
@@ -352,6 +325,17 @@ ALL THE IMPORTANT THINGS OF HOW TO RUN THE SITE WILL BE WRITTEN HERE!!
 <div class="ui modal" id="NeedHelp">
   <div class="header">Header</div>
     <div class="scrolling content">
+        <p id="one"></p>
+    </div>
+  <div class="actions">
+    <div class="ui cancel inverted red button">CLOSE</div>
+  </div>
+</div>
+
+
+<div class="ui modal" id="Dish1">
+  <div class="header">DISH 1</div>
+    <div class="scrolling content">
         <p>Very long content goes here</p>
         <p>Very long content goes here</p>
         <p>Very long content goes here</p>
@@ -371,16 +355,96 @@ ALL THE IMPORTANT THINGS OF HOW TO RUN THE SITE WILL BE WRITTEN HERE!!
   </div>
 </div>
 
+<div class="ui modal" id="Dish2">
+  <div class="header">DISH 2</div>
+    <div class="scrolling content">
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+    </div>
+  <div class="actions">
+    <div class="ui cancel inverted red button">CLOSE</div>
+  </div>
+</div>
+
+<div class="ui modal" id="Dish3">
+  <div class="header">DISH 3</div>
+    <div class="scrolling content">
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+    </div>
+  <div class="actions">
+    <div class="ui cancel inverted red button">CLOSE</div>
+  </div>
+</div>
+
+<div class="ui modal" id="Dish4">
+  <div class="header">DISH 4</div>
+    <div class="scrolling content">
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+    </div>
+  <div class="actions">
+    <div class="ui cancel inverted red button">CLOSE</div>
+  </div>
+</div>
+
+<div class="ui modal" id="Dish5">
+  <div class="header">DISH 5</div>
+    <div class="scrolling content">
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+        <p>Very long content goes here</p>
+    </div>
+  <div class="actions">
+    <div class="ui cancel inverted red button">CLOSE</div>
+  </div>
+</div>
 <!--
 ================================================================================================
                                       END  NEEDHELP
 ================================================================================================
 -->
-<script>
-$("#NeedHelpButton").click(function(){$('#NeedHelp').modal('show');});
-$("#dish1Button").click(function(){window.alert('Hello1');});
-$("#dish2Button").click(function(){window.alert('Hello2');});
-$("#dish3Button").click(function(){window.alert('Hello3');});
-$("#dish4Button").click(function(){window.alert('Hello4');});
-$("#dish5Button").click(function(){window.alert('Hello5');});
-</script>  
+<script src="main.js"></script>  
