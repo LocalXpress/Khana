@@ -13,13 +13,6 @@
     });
     
 
-
-
-
-
-
-
-
     $("#dish1Button").click(function(){$('#Dish1').modal('show');});
     $("#dish2Button").click(function(){$('#Dish2').modal('show');});
     $("#dish3Button").click(function(){$('#Dish3').modal('show');});
