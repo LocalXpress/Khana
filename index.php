@@ -2,10 +2,10 @@
     <title>Index</title>
     <link rel="stylesheet" type="text/css" href="semantic.css">
     <link rel="stylesheet" type="text/css" href="/css/indexpage.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width"/>
     <script src="semantic.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
 
 
 </head>
@@ -22,7 +22,7 @@
             <div>   
                 <thead>
                     <tr id="FullScreenHeader">
-                        <th>
+                        <th class="table_item_header">
                             <div class="ui stackable grid">
                                 <div class="six wide column">
                                     ITEM
