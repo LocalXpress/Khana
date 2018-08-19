@@ -18,6 +18,7 @@
     $("#dish3Button").click(function(){$('#Dish3').modal('show');});
     $("#dish4Button").click(function(){$('#Dish4').modal('show');});
     $("#dish5Button").click(function(){$('#Dish5').modal('show');});
+    $("#TableBody").focus();
 
     function increase(element) {
       var x = element.id;
