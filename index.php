@@ -155,20 +155,20 @@
                         <div class="two wide column">
                             <i class="rupee sign icon"></i>65.00
                         </div>
-                        <div class="two wide column">
+                        <div class="two wide column" id="DoubleEggDiv">
                             0
                         </div>
                         <div class="two wide column">
                             <div class="ui ignored icon font buttons">
-                                <button class="ui tiny green inverted button"><i class="plus icon"></i></a>
-                                <button class="ui tiny red   inverted button"><i class="minus icon"></i></a>
+                                <button class="ui tiny green inverted button" id="DoubleEggInc"  onclick="increase(this);"><i class="plus icon"></i></a>
+                                <button class="ui tiny red   inverted button" id="DoubleEggDesc"  onclick="increase(this);"><i class="minus icon"></i></a>
                             </div>
                         </div>
-                         <div class="two wide column">
-                            <i class="rupee sign icon"></i>0.00
+                         <div class="two wide column" id="DoubleEggCostDiv">
+                            <i class="rupee sign icon"></i>0
                         </div>
                         <div class="two wide column">
-                            <a href="#" id="dish4Button"><i class="ellipsis horizontal icon"></i></a>
+                            <button class="ui blue button" id="dish4Button">Info</button>
                         </div>    
                     </div> 
                   </td>

@@ -3,6 +3,7 @@
   <div class="header">Header</div>
     <div class="scrolling content">
         <p id="one"></p>
+        <p id="two"></p>
     </div>
   <div class="actions">
     <div class="ui cancel inverted red button">CLOSE</div>

@@ -1,14 +1,19 @@
     var EggChicken  =   0;
+    var DoubleEgg   =   0;
     var TotalCost   =   0;
 
     function display()
     {
         EggChickenDiv.innerHTML     =   (EggChicken);
         EggChickenCostDiv.innerHTML =   '<i class="rupee sign icon"></i>'+(EggChicken*80);
+
+        DoubleEggDiv.innerHTML      =   (DoubleEgg);
+        DoubleEggCostDiv.innerHTML  =   '<i class="rupee sign icon"></i>'+(DoubleEgg*65);
     }
     $("#NeedHelpButton").click(function(){
         $('#NeedHelp').modal('show');
-        $("#one").html("Egg Chicken Roll: "+EggChicken+" x 80.00 = "+(EggChicken*80));
+        $("#one").html("Egg Chicken Roll: " +EggChicken+    " x 80.00 = "   +(EggChicken*80));
+        $("#two").html("Double Egg Roll: "  +DoubleEgg+     " x 65.00 = "   +(DoubleEgg*65));
  
     });
     
@@ -26,5 +31,9 @@
                 {   EggChicken--; display(); }
         else if(x=='EggChickenInc' && EggChicken<=9)
             {   EggChicken++; display();}
+        else if(x=='DoubleEggInc' && DoubleEgg<=9)
+            {   DoubleEgg++; display();}
+        else if(x=='DoubleEggDesc' && DoubleEgg!=0)
+            {   DoubleEgg--; display();}
         
     }
