@@ -1,6 +1,7 @@
 @media only screen and (min-width: 600px){
     
-        #TableBody
+        #TableBody,
+        #order_list_wrapper
             {
                 margin: auto;
                 margin-top: 5%;
@@ -31,8 +32,7 @@
     .heading 
         {
             margin-top: 2%;
-            margin-bottom: -1%;
-            border-bottom: 2px;
+            margin-bottom: 2%;
         }
     h3
         {
@@ -49,5 +49,8 @@
     top: 0;
     left: 0;
     filter: opacity(0.25);
-   /*  filter: blur(5px); */
+    z-index: -9;
+}
+#order_list_wrapper{
+    display:none;
 }
