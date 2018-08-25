@@ -4,14 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Master Khana || Project</title>
-	<link rel="stylesheet" type="text/css" href="semantic.css">
+	<link rel="stylesheet" type="text/css" href="css/semantic.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <?php include_once 'trimmed/header.php'; ?>
-
-
 
 <div id="TableBody">
 	<table class="ui single line table">
@@ -228,7 +226,7 @@
 <?php include_once 'trimmed/footer.php'; ?>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-<script src="semantic.js"></script>
-<script src="main.js"></script>
+<script src="js/semantic.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
