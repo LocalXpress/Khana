@@ -14,7 +14,7 @@
 
 
 <div id="TableBody">
-	<table class="ui single line table">
+	<table class="ui single line table" id="price_table">
 		<thead >
 			<tr id="FullScreenHeader">
 				<th class="table_item_header">ITEM</th>
@@ -32,8 +32,8 @@
 				<td>0</td>
 				<td>
 					<div class="ui ignored icon font buttons">
-						<button class="ui tiny green inverted button"><i class="plus icon"></i></button>
-						<button class="ui tiny red   inverted button"><i class="minus icon"></i></button>
+						<button class="ui tiny green inverted button buttonPlus"><i class="plus icon"></i></button>
+						<button class="ui tiny red   inverted button buttonMinus"><i class="minus icon"></i></button>
 					</div>
 				</td>
 				<td>
@@ -49,8 +49,8 @@
 				<td>0</td>
 				<td>
 					<div class="ui ignored icon font buttons">
-						<button class="ui tiny green inverted button"><i class="plus icon"></i></button>
-						<button class="ui tiny red   inverted button"><i class="minus icon"></i></button>
+						<button class="ui tiny green inverted button buttonPlus"><i class="plus icon"></i></button>
+						<button class="ui tiny red   inverted button buttonMinus"><i class="minus icon"></i></button>
 					</div>
 				</td>
 				<td>
@@ -66,8 +66,8 @@
 				<td>0</td>
 				<td>
 					<div class="ui ignored icon font buttons">
-						<button class="ui tiny green inverted button"><i class="plus icon"></i></button>
-						<button class="ui tiny red   inverted button"><i class="minus icon"></i></button>
+						<button class="ui tiny green inverted button buttonPlus"><i class="plus icon"></i></button>
+						<button class="ui tiny red   inverted button buttonMinus"><i class="minus icon"></i></button>
 					</div>
 				</td>
 				<td>
@@ -83,12 +83,12 @@
 				<td id="EggChickenDiv">0</td>
 				<td>
 					<div class="ui ignored icon font buttons">
-						<button class="ui tiny green inverted button" id="EggChickenInc"  onclick="increase(this);"><i class="plus icon"></i></button>
-						<button class="ui tiny red   inverted button" id="EggChickenDesc"  onclick="increase(this);"><i class="minus icon"></i></button>
+						<button class="ui tiny green inverted button buttonPlus"><i class="plus icon"></i></button>
+						<button class="ui tiny red   inverted button buttonMinus"><i class="minus icon"></i></button>
 					</div>
 				</td>
 				<td>
-					<i class="rupee sign icon"></i><span id="EggChickenCostDiv">0.00</span>
+					<span id="EggChickenCostDiv">0.00</span>
 				</td>
 				<td>
 					<button id="dish5Button" class="ui blue button">Info</button>
