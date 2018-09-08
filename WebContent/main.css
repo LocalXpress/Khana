@@ -1,0 +1,25 @@
+	table
+	{
+		margin-top:				20%;
+		margin-left: 			40%; 
+		background-color: 		green;	
+	}
+	table, th, td 
+	{
+    	border: 				1px solid black;
+	}
+	p
+	{
+		color: 					red;
+	}
+	.show
+	{
+		background-color: 		red;
+		text-align: 			center;
+		border: 				10px solid blue;
+		margin-top: 			20%;
+        transform-origin:     	right top;
+		transform:           	skewY(4deg);
+		transition: 			1s;
+	}
+
